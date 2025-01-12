@@ -52,8 +52,8 @@ tiling_drag modifier titlebar
 bindsym $mod+Return exec i3-sensible-terminal
 
 # screenshots
-bindsym --release Print exec scrot -e 'xclip -selection clipboard -t image/png -i $f'
-bindsym --release Shift+Print exec scrot -s -e 'xclip -selection clipboard -t image/png -i $f'
+bindsym --release Print exec scrot -e 'xclip -selection clipboard -t image/png < $f'
+bindsym --release Shift+Print exec scrot -s -e 'xclip -selection clipboard -t image/png < $f'
 
 # kill focused window
 bindsym $mod+Shift+q kill
